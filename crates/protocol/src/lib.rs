@@ -382,6 +382,8 @@ pub use wire::{
 // RuntimeNotice's review_recorded go. ProvidersStatus gains acp_models, each
 // installed ACP agent's own models; SetActiveAcpAgent gains model, and the
 // RefreshAcpCatalog command lists an agent's models and options again.
+// FavoriteModel::Row and ToggleFavoriteModel gain acp_agent_id so ACP models
+// can be starred per agent.
 pub const PROTOCOL_VERSION: u32 = 30;
 
 #[cfg(test)]
